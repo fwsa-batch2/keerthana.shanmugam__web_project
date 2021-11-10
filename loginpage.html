@@ -15,24 +15,31 @@
         background-attachment: fixed;
         background-position: center;
       }
+      .table input{
+        height: 10px;
+        width: 20%;
+        padding: 10px;
+        margin-left: 800px;
+        border-radius: 10px;
+        background-color:white;
+
+      }
     </style>
-      <form>
-        <table align="center" style="width:70%">
-          <tr style="height:10%">
-            <br><br><td> <input type="text" name="username" placeholder="username"></td>
+    <form action="homepage.html">
+        <table>
+          <tr class="table">
+            <br><br><td> <input type="text" name="username" placeholder="username" required></td>
           </tr>
-          <tr>
-            <td><br> <input type="text" name="password" placeholder="password"></td>
+          <tr class="table">
+            <td><br> <input type="password" name="password" placeholder="password" minlength="8" maxlength="12" required></td>
           </tr>
+          <!-- <tr>
+            <input type="submit" name="" value="login">
+          </tr> -->
         </table>
-             <br><button><a href="homepage.html">submit</a></button><br>
-             <br>(if you forget your username or password submit your email below)
-             <table align="center">
-               <tr>
-                 <td><br> <input type="text" name="email" placeholder="email"></td>
-               </tr>
-             </table>
-             <br> <button>submit</button>
+        <br> <button> LOGIN</button>
       </form>
+
+             <br><br> <a href="#">forget password?</a>
   </body>
 </html>

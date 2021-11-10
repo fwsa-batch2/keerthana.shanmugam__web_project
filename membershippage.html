@@ -15,35 +15,39 @@
     }
     </style>
       <h1> NEW MEMBERSHIP LOGIN </h1>
-    <form>
+    <form action="loginpage.html">
       <table>
         <tr>
-          <th>Name:</th><td><input type="text" name="name" required></td>
+          <th>Name:</th><td><input type="text" name="name" placeholder="Enter Your Name" required ></td>
         </tr>
           <tr>
-            <th><br>Username:</th><td><br><input type="text" name="username" required></td>
+            <th><br>Username:</th><td><br><input type="text" name="username"placeholder="Enter Your Username" required ></td>
           </tr>
             <tr>
-              <th><br>Password:</th><td><br><input type="text" name="password" required></td>
+              <th><br>Password:</th><td><br><input type="password" name="password" placeholder="Enter Password" minlength="8" maxlength="12" required></td>
             </tr>
             <tr>
-              <th><br>Confirm password:</th><td><br><input type="text" name="password"required></td>
+              <th><br>Confirm password:</th><td><br><input type="password" name="password"placeholder="Enter Password" minlength="8" maxlength="12" required></td>
             </tr>
               <tr>
-                <th><br>e-mail:</th><td><br><input type="text" name="mail_id" required></td>
+                <th><br>e-mail:</th><td><br><input type="text" name="mail_id" placeholder="Enter Your e-mail " required></td>
               </tr>
                 <tr>
                   <th><br>DOB:</th><td><br><input type="date" name="dob" required></td>
                 </tr>
                   <tr>
-                    <th><br>Age:</th><td><br><input type="text" name="age" required></td>
+                    <th><br>Age:</th><td><br><input type="text" name="age" placeholder="Enter Your Age" required></td>
                   </tr>
                   <tr>
-                    <th><br>Gender:</th><td><br><input type="radio" name="gender" value="male">Male<input type="radio" name="gender" value="female">Female
-                      <input type="radio" name="gender" value="transgender">Transgender</td>
+                    <th><br>Gender:</th><td><br><select class="gender" name="">
+                      <option value="Select">Select</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Transgender">Transgender</option>
+                    </select></td>
                   </tr>
                     <tr>
-                      <th><br>Country:</th><td><br><input type="text" name="country" required></td>
+                      <th><br>Country:</th><td><br><input type="text" name="country" placeholder="Enter Your Country Name" required></td>
                     </tr>
                         <tr>
                           <th><h3> ARMYS THOUGHTS ABOUT BTS:-</h3></th>
@@ -60,7 +64,7 @@
                                 <input type="radio" name="concert" value="No">No</td>
                             </tr>
       </table>
-             <br> <center><button> Reset </button> <button><a href="index.html"> Submit</a> </button></center>
+             <br> <center><button> Reset </button> <button> Submit </button></center>
     </form>
 
   </body>
