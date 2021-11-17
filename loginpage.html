@@ -24,19 +24,31 @@
         background-color:white;
 
       }
+      .table button{
+        width: 150px;
+        height: 50px;
+      }
+      .table button:hover {
+        background-color: purple;
+        color:white;
+      }
+      .table a{
+        text-decoration: none;
+        color: black;
+      }
     </style>
-    <form action="homepage.html">
+    <form action="homepage.html" class="table">
         <table>
-          <tr class="table">
+          <tr>
             <br><br><td> <input type="text" name="username" placeholder="username" required></td>
           </tr>
-          <tr class="table">
+          <tr>
             <td><br> <input type="password" name="password" placeholder="password" minlength="8" maxlength="12" required></td>
           </tr>
         </table>
-        <br> <button> LOGIN</button>
-      </form>
+        <br> <button> LOGIN</button> <button type="button" name="button"> <a href="membershippage.html"> SIGN IN </a></button>
 
-             <br><br> <a href="forgetpage.html">forget password?</a>
+         <br><br> <a href="forgetpage.html">forget password?</a>
+         </form>
   </body>
 </html>
