@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>BTS fanpage</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body align ="center">
     <style media="screen">
@@ -13,15 +14,7 @@
       background-attachment: fixed;
       background-position: center;
     }
-    .hello input{
-      height: 10px;
-      width: 20%;
-      padding: 10px;
-      align-items:center;
-      margin-left: 800px;
-      border-radius: 10px;
-      background-color:white;
-    }
+    
     </style>
       <form action="loginpage.html">
         <br><br><br><br>
@@ -30,8 +23,13 @@
             <td><input type="text" name="e-mail" placeholder="Enter Your e-mail.id" required value=""></td>
           </tr>
           </table>
-          <br><br><button> Submit</button>
-
+          <br><br>
+          <button onclick=submit()> Submit</button>
+            <script>
+              function submit(){
+              alert('Your Username and Password send to Your email_id successfully');
+              }
+           </script>
       </form>
   </body>
 </html>

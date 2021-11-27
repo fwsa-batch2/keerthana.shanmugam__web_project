@@ -18,10 +18,7 @@ h1{
     /* text-align: right; */
 
 }
-/* .nav h1{
-  color: purple;
-  text-align: right;
-} */
+
 .nav a{
     text-decoration: none;
     color: purple;
@@ -32,4 +29,35 @@ h1{
 .buy p{
   font-size: 30px;
 
+}
+.table input{
+  height: 10px;
+  width: 20%;
+  padding: 10px;
+  margin-left: 800px;
+  border-radius: 10px;
+  background-color:white;
+
+}
+.table button{
+  width: 150px;
+  height: 50px;
+  
+}
+.table button:hover {
+  background-color: purple;
+  color:white;
+}
+.table a{
+  text-decoration: none;
+  color: black;
+}
+.hello input{
+  height: 10px;
+  width: 20%;
+  padding: 10px;
+  align-items:center;
+  margin-left: 800px;
+  border-radius: 10px;
+  background-color:white;
 }
