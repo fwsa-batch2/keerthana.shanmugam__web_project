@@ -30,14 +30,14 @@
               <th><br>Confirm password:</th><td><br><input type="password" name="password" placeholder="Enter Password" minlength="8" maxlength="12" required></td>
             </tr>
               <tr>
-                <th><br>e-mail:</th><td><br><input type="text" name="mail_id" placeholder="Enter Your e-mail" required></td>
+                <th><br>e-mail:</th><td><br><input type="email" name="mail_id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter Your e-mail" required></td>
               </tr>
                 <tr>
-                  <th><br>DOB:</th><td><br><input type="date" name="dob" required></td>
+                  <th><br>DOB:</th><td><br><input type="date" name="dob" min="1970-01-01" max="2020-12-31" placeholder="dd/mm/yyyy" required></td>
                 </tr>
-                  <tr>
-                    <th><br>Age:</th><td><br><input type="text" name="age" placeholder="Enter Your Age" required></td>
-                  </tr>
+                  <!-- <tr>
+                    <th><br>Age:</th><td><br><input type="number" name="age" minlength="5" maxlength="90" placeholder="Enter Your Age" required></td>
+                  </tr> -->
                   <tr>
                     <th><br>Gender:</th><td><br><select class="gender" name="">
                       <option value="Select">Select</option>
