@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>bts membership form 2</title>
+    <title>bts membership sign in</title>
     <img src="./../assets/images/bts logo.jpg" align="right" width="90" height="90">
   </head>
   <body>
@@ -15,7 +15,7 @@
     }
     </style>
       <h1> NEW MEMBERSHIP LOGIN </h1>
-    <form action="./../pages/login.html">
+    <form onsubmit="mypassword()">
       <table>
         <tr>
           <th>Name:</th><td><input type="text" name="name" placeholder="Enter Your Name" required ></td>
@@ -24,10 +24,10 @@
             <th><br>Username:</th><td><br><input type="text" name="username" placeholder="Enter Your Username" required ></td>
           </tr>
             <tr>
-              <th><br>Password:</th><td><br><input type="password" name="password" placeholder="Enter Password" minlength="8" maxlength="12" required></td>
+              <th><br>Password:</th><td><br><input type="password" name="password" id="password" placeholder="Enter Password" minlength="8" maxlength="12" required></td>
             </tr>
             <tr>
-              <th><br>Confirm password:</th><td><br><input type="password" name="password" placeholder="Enter Password" minlength="8" maxlength="12" required></td>
+              <th><br>Confirm password:</th><td><br><input type="password" name="password" id="confirm password" placeholder="Enter Password" minlength="8" maxlength="12" required></td>
             </tr>
               <tr>
                 <th><br>e-mail:</th><td><br><input type="email" name="mail_id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter Your e-mail" required></td>
@@ -64,8 +64,9 @@
                                 <input type="radio" name="concert" value="No">No</td>
                             </tr>
       </table>
-             <br> <center><button> Reset </button> <button> Submit </button></center>
+             <br>  <input type="submit">
     </form>
+    <script src="./../assets/js/main.js"></script>
 
   </body>
 </html>
