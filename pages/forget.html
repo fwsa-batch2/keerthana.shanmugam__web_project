@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>BTS fanpage</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./../assets/css/style.css">
   </head>
   <body align ="center">
     <style media="screen">
       body{
-      background-image: url('./images/bts2.jpg');
+      background-image: url('./../assets/images/bts2.jpg');
       background-repeat: no-repeat;
       background-size: 100% 100%;
       background-attachment: fixed;
@@ -16,7 +16,7 @@
     }
     
     </style>
-      <form action="loginpage.html">
+      <form action="./../pages/login.html">
         <br><br><br><br>
         <table>
           <tr class="hello">
@@ -24,12 +24,9 @@
           </tr>
           </table>
           <br><br>
-          <button onclick="submit()"> Submit</button>
-            <script>
-              function submit(){
-              alert('Your Username and Password send to Your email_id successfully');
-              }
-           </script>
+          <button onclick="submitHandler()"> Submit</button>
+            
       </form>
+      <script src="./../assets/js/main.js"></script>
   </body>
 </html>
