@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>bts login page</title>
-    <img src="./../assets/images/bts logo.jpg" width="90" height="90">
-    <link rel="stylesheet" href="./../assets/css/style.css">
-  </head>
-  <body align=center>
-  <h1>LOGIN</h1>
-    <style media="screen">
-      body{
-        background-image: url('./../assets/images/bts4.jpg');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-attachment: fixed;
-        background-position: center;
-      }
-      
-    </style>
-    <form action="./../pages/home.html" class="table">
-        <table>
-          <tr>
-            <br><br><td> <input type="text" name="username" placeholder="username" required></td>
-          </tr>
-          <tr>
-            <td><br> <input type="password" name="password" placeholder="password" minlength="8" maxlength="12" required></td>
-          </tr>
-        </table>
-        <br> <button> LOGIN</button> <button type="button" name="button"> <a href="./../pages/membership.html"> SIGN IN </a></button>
 
-         <br><br> <a href="./../pages/forget.html">forget password?</a>
-         </form>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>bts login page</title>
+  <img src="./../assets/images/bts logo.jpg" width="90" height="90">
+  <link rel="stylesheet" href="./../assets/css/style.css">
+</head>
+
+<body align=center>
+  <h1>LOGIN</h1>
+  <style media="screen">
+    body {
+      background-image: url('./../assets/images/bts4.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment: fixed;
+      background-position: center;
+    }
+  </style>
+  <form onsubmit="myLogIn()" class="table">
+    <table>
+      <tr>
+        <br><br>
+        <td> <input type="email" name="user_id" id="mail" placeholder="Enter Your email" required></td>
+      </tr>
+      <tr>
+        <td><br> <input type="password" name="password" id="pass" placeholder="Enter Your Password" minlength="8" maxlength="12"
+            required></td>
+      </tr>
+    </table>
+    <br> <input type="submit"> <button type="button" name="button"> <a
+        href="./../pages/membership.html"> SIGN IN </a></button>
+
+    <br><br> <a href="./../pages/forget.html">forget password?</a>
+  </form>
+  <script src="./../assets/js/main.js"></script>
+</body>
+
 </html>

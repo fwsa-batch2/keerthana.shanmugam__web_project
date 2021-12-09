@@ -28,7 +28,11 @@ h1{
 }
 .buy p{
   font-size: 30px;
+  margin-left: 100px;
 
+}
+.logo{
+  margin-left: 100px;
 }
 .table input{
   height: 10px;

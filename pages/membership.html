@@ -1,72 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>bts membership sign in</title>
-    <img src="./../assets/images/bts logo.jpg" align="right" width="90" height="90">
-  </head>
-  <body>
-    <style>
-      body {
+
+<head>
+  <title>bts membership sign in</title>
+  <img src="./../assets/images/bts logo.jpg" align="right" width="90" height="90">
+</head>
+
+<body>
+  <style>
+    body {
       background-image: url('./../assets/images/bts3.jpg');
       background-repeat: no-repeat;
       background-size: 100% 100%;
       background-attachment: fixed;
       background-position: center;
     }
-    </style>
-      <h1> NEW MEMBERSHIP LOGIN </h1>
-    <form onsubmit="mypassword()">
-      <table>
-        <tr>
-          <th>Name:</th><td><input type="text" name="name" placeholder="Enter Your Name" required ></td>
-        </tr>
-          <tr>
-            <th><br>Username:</th><td><br><input type="text" name="username" placeholder="Enter Your Username" required ></td>
-          </tr>
-            <tr>
-              <th><br>Password:</th><td><br><input type="password" name="password" id="password" placeholder="Enter Password" minlength="8" maxlength="12" required></td>
-            </tr>
-            <tr>
-              <th><br>Confirm password:</th><td><br><input type="password" name="password" id="confirm password" placeholder="Enter Password" minlength="8" maxlength="12" required></td>
-            </tr>
-              <tr>
-                <th><br>e-mail:</th><td><br><input type="email" name="mail_id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter Your e-mail" required></td>
-              </tr>
-                <tr>
-                  <th><br>DOB:</th><td><br><input type="date" name="dob" min="1970-01-01" max="2020-12-31" placeholder="dd/mm/yyyy" required></td>
-                </tr>
-                  <!-- <tr>
+  </style>
+  <h1> NEW MEMBERSHIP LOGIN </h1>
+  <form onsubmit="mySignIn()">
+    <table>
+      <tr>
+        <th>Name:</th>
+        <td><input type="text" name="name" id="firstName" placeholder="Enter Your Name" required></td>
+      </tr>
+      <tr>
+        <th><br>Password:</th>
+        <td><br><input type="password" name="password" id="password" placeholder="Enter Password" minlength="8"
+            maxlength="12" required></td>
+      </tr>
+      <tr>
+        <th><br>Confirm password:</th>
+        <td><br><input type="password" name="password" id="confirmPassword" placeholder="Enter Password" minlength="8"
+            maxlength="12" required></td>
+      </tr>
+      <tr>
+        <th><br>e-mail:</th>
+        <td><br><input type="email" name="mail_id" id="emailId" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            placeholder="Enter Your e-mail" required></td>
+      </tr>
+      <tr>
+        <th><br>DOB:</th>
+        <td><br><input type="date" name="dob" id="dateOfBirth" min="1970-01-01" max="2020-12-31"
+            placeholder="dd/mm/yyyy" required></td>
+      </tr>
+      <!-- <tr>
                     <th><br>Age:</th><td><br><input type="number" name="age" minlength="5" maxlength="90" placeholder="Enter Your Age" required></td>
                   </tr> -->
-                  <tr>
-                    <th><br>Gender:</th><td><br><select class="gender" name="">
-                      <option value="Select">Select</option>
-                      <option value="Male">Male</option>
-                      <option value="Female">Female</option>
-                      <option value="Transgender">Transgender</option>
-                    </select></td>
-                  </tr>
-                    <tr>
-                      <th><br>Country:</th><td><br><input type="text" name="country" placeholder="Enter Your Country Name" required></td>
-                    </tr>
-                        <tr>
-                          <th><h3> ARMYS THOUGHTS ABOUT BTS:-</h3></th>
-                        </tr>
-                          <tr>
-                            <th> Are you an army:</th><td><input type="radio" name= "army" value="Yes">Yes <input type="radio" name="army" value="No">No </td>
-                          </tr>
-                            <tr>
-                              <th><br>Do you attented any <br>BTS fansign ever:</th><td><br><input type="radio" name="fansign" value="Yes">Yes
-                                <input type="radio" name="fansign" value="No">No </td>
-                            </tr>
-                            <tr>
-                              <th><br>Do you attented any BTS concert ever:</th><td><br><input type="radio" name="concert" value="Yes">Yes
-                                <input type="radio" name="concert" value="No">No</td>
-                            </tr>
-      </table>
-             <br>  <input type="submit">
-    </form>
-    <script src="./../assets/js/main.js"></script>
+      <tr>
+        <th><br>Gender:</th>
+        <td><br><select class="gender" id="gender" name="">
+            <option value="Select">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Transgender">Transgender</option>
+          </select></td>
+      </tr>
+      <tr>
+        <th><br>Country:</th>
+        <td><br><input type="text" name="country" id="countryName" placeholder="Enter Your Country Name" required></td>
+      </tr>
+      <tr>
+        <th>
+          <h3> ARMYS THOUGHTS ABOUT BTS:-</h3>
+        </th>
+      </tr>
+      <tr>
+        <th> Are you an army:</th>
+        <td><input type="radio" name="army" value="Yes">Yes <input type="radio" name="army" value="No">No </td>
+      </tr>
+      <tr>
+        <th><br>Do you attented any <br>BTS fansign ever:</th>
+        <td><br><input type="radio" name="fansign" value="Yes">Yes
+          <input type="radio" name="fansign" value="No">No
+        </td>
+      </tr>
+      <tr>
+        <th><br>Do you attented any BTS concert ever:</th>
+        <td><br><input type="radio" name="concert" value="Yes">Yes
+          <input type="radio" name="concert" value="No">No
+        </td>
+      </tr>
+    </table>
+    <br> <input type="submit">
+  </form>
+  <script src="./../assets/js/main.js"></script>
 
-  </body>
+</body>
+
 </html>
