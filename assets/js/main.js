@@ -77,8 +77,8 @@ function emailValidation(current_mail) {
 }
 
 function checkpassword() {
-    let pass1 = document.getElementById("password").value;
-    let pass2 = document.getElementById("confirmPassword").value;
+    let pass1 = document.getElementById("password").value.trim();
+    let pass2 = document.getElementById("confirmPassword").value.trim();
 
     if (pass1 == pass2) {
         console.log("password matched");
@@ -99,8 +99,8 @@ let login = []
 function myLogIn() {
     event.preventDefault();
 
-    let pwd1 = document.getElementById("mail").value;
-    let pwd2 = document.getElementById("pass").value;
+    let pwd1 = document.getElementById("mail").value.trim();
+    let pwd2 = document.getElementById("pass").value.trim();
     let login = false;
 
     let terms = localStorage.getItem("lodin_Details");
