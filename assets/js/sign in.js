@@ -1,9 +1,3 @@
-//forget page javascript
-function submitHandler() {
-    alert('Your User_mail and Password send to Your email_id successfully');
-}
-
-//sign In page javascript
 let userList = [];
 
 function onPageLoad() {
@@ -19,7 +13,7 @@ function mySignIn() {
     event.preventDefault();
 
     let name = document.getElementById("firstName").value;
-    let pass = document.getElementById("password").value;
+    let password = document.getElementById("password").value;
     let email = document.getElementById("emailId").value;
     let dob = document.getElementById("dateOfBirth").value;
     let gender = document.getElementById("gender").value;
@@ -27,8 +21,8 @@ function mySignIn() {
 
     const armyDetails = {
         "firstname": name,
-        "password": pass,
-        "mail": email,
+        "password": password,
+        "email": email,
         "dob": dob,
         "gender": gender,
         "country": country
@@ -75,8 +69,8 @@ function emailValidation(current_mail) {
 }
 
 function checkpassword() {
-    let pass1 = document.getElementById("password").value.trim();
-    let pass2 = document.getElementById("confirmPassword").value.trim();
+    let pass1 = document.getElementById("password").value;
+    let pass2 = document.getElementById("confirmPassword").value;
 
     if (pass1 == pass2) {
         console.log("password matched");
@@ -89,40 +83,5 @@ function checkpassword() {
         return false;
     }
 }
-
-
-//login page javascript
-let login = []
-
-function myLogIn() {
-    event.preventDefault();
-
-    let pwd1 = document.getElementById("mail").value.trim();
-    let pwd2 = document.getElementById("pass").value.trim();
-    let login = false;
-
-    let terms = localStorage.getItem("lodin_Details");
-    let storeageInarray = JSON.parse(terms);
-    let array = storeageInarray;
-
-    for (i = 0; i < array; i++) {
-        if (storeageInarray[i].mail == pwd1 && storeageInarray[i].password == pwd2) {
-            console.log('password and email matched')
-            login = true;
-            break;
-        }
-    }
-    if (login) {
-        window.location.href = "home.html"
-
-    }
-    else {
-        alert("Ivalid Email_Id or Password")
-    }
-}
-
-
-
-
 
 
