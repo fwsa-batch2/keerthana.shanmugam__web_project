@@ -1,6 +1,6 @@
 //forget page javascript
 function submitHandler() {
-    alert('Your Username and Password send to Your email_id successfully');
+    alert('Your User_mail and Password send to Your email_id successfully');
 }
 
 //sign In page javascript
@@ -20,7 +20,6 @@ function mySignIn() {
 
     let name = document.getElementById("firstName").value;
     let pass = document.getElementById("password").value;
-    let confirm = document.getElementById("confirmPassword").value;
     let email = document.getElementById("emailId").value;
     let dob = document.getElementById("dateOfBirth").value;
     let gender = document.getElementById("gender").value;
@@ -29,7 +28,6 @@ function mySignIn() {
     const armyDetails = {
         "firstname": name,
         "password": pass,
-        "confirm password": confirm,
         "mail": email,
         "dob": dob,
         "gender": gender,
@@ -109,6 +107,7 @@ function myLogIn() {
 
     for (i = 0; i < array; i++) {
         if (storeageInarray[i].mail == pwd1 && storeageInarray[i].password == pwd2) {
+            console.log('password and email matched')
             login = true;
             break;
         }
