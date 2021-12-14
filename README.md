@@ -4,5 +4,8 @@
    ##### https://btsfanpageapp-ui-keerthanashanmugam.netlify.app/
 
 ### Features :
-* ##### Membership Sign In 
-* ##### Login  
+* ##### Membership Sign In (completed)
+* ##### Login (completed)
+* ##### home (on process)
+* ##### buy (on process)
+* ##### calender (on process)
