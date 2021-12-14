@@ -57,7 +57,7 @@ function emailValidation(current_mail) {
 
     for (i = 0; i < userList.length; i++) {
         const user = userList[i];
-        const email = user.mail;
+        const email = user.email;
 
         if (current_mail == email) {
             thisMailExists = true;
