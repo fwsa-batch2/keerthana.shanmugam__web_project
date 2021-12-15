@@ -6,7 +6,6 @@
 ### Features :
 * ##### Membership Sign In (completed)
 * ##### Login (completed)
-* ##### forget page (completed)
-* ##### home (on process)
-* ##### buy (on process)
+* ##### new releases (on process)
+* ##### products (on process)
 * ##### calender (on process)
