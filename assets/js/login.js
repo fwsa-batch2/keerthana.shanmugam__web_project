@@ -1,17 +1,19 @@
 function myLogIn() {
     event.preventDefault();
-
+     
+    console.group("myLogIn")
     let pwd1 = document.getElementById("mail").value;
     let pwd2 = document.getElementById("pass").value;
     let storeageInarray = JSON.parse(localStorage.getItem("Fan_Details"));
     let login = storeageInarray.length;
 
     let loginId = false;
-
+     
     for (i = 0; i < login; i++) {
         const userdetail = storeageInarray[i];
         const email = userdetail.email;
         const password = userdetail.password;
+        console.table(userdetail)   
 
         if (pwd1 === email && pwd2 === password) {
             loginId = true;
@@ -23,8 +25,9 @@ function myLogIn() {
         window.location.href = "new releases.html"
     }
     else {
-        console.log('password and email not-matched')
+        console.error('password or email not-matched')
         alert("Ivalid Email_Id or Password")
+        console.groupEnd("myLogIn")
         return null;
     }
 }

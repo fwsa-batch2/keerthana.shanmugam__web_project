@@ -1,9 +1,11 @@
 let userList = [];
 
 function onPageLoad() {
+    console.group("onPageLoad")
     let users = JSON.parse(localStorage.getItem("Fan_Details"));
     if (users != null) {
         userList = users;
+        console.groupEnd("onPageLoad")
     }
 }
 onPageLoad();
@@ -11,7 +13,7 @@ onPageLoad();
 function mySignIn() {
 
     event.preventDefault();
-
+    console.group("mySignIn")
     let name = document.getElementById("firstName").value;
     let password = document.getElementById("password").value;
     let email = document.getElementById("emailId").value;
@@ -27,12 +29,13 @@ function mySignIn() {
         "gender": gender,
         "country": country
     }
-
+    console.table(userList)
     const isEmailAlreadyExists = emailValidation(email);
 
 
     if (isEmailAlreadyExists) {
         alert('Email Already Exists');
+        console.error('Email Already Exists')
         return;
     }
 
@@ -46,29 +49,31 @@ function mySignIn() {
     }
     else {
         alert("password is not matched");
-
+        console.error("password is not matched")
     }
+    console.groupEnd("mySignIn")
 }
 
 function emailValidation(current_mail) {
-
+    console.group("emailValidation")
     let thisMailExists = false;
     // let userList = JSON.parse(localStorage.getItem("Fan_Details"));
 
     for (i = 0; i < userList.length; i++) {
         const user = userList[i];
         const email = user.email;
-
+        console.log(user)
         if (current_mail == email) {
             thisMailExists = true;
             break;
         }
     }
-
+    console.groupEnd("emailValidation")
     return thisMailExists;
 }
 
 function checkpassword() {
+    console.group("checkpassword")
     let pass1 = document.getElementById("password").value;
     let pass2 = document.getElementById("confirmPassword").value;
 
@@ -78,8 +83,9 @@ function checkpassword() {
         return true;
     }
     else {
-        console.log("password does not matched");
+        console.error();("password does not matched");
         //  alert("password does not matched");
+        console.groupEnd("checkpassword")
         return false;
     }
 }
