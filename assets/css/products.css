@@ -3,3 +3,49 @@
     margin-left: 100px;
   
   }
+.product{
+    margin-left: 50px;
+    margin-top: 25px;
+    display: flex;
+}
+.comback{
+    margin-left:70px;
+    font-style: unset;
+    font-weight: 20px;
+    text-align: center;
+}
+.tickets{
+    margin-left: 150px;
+    font-style: unset;
+    font-weight: 20px;
+    text-align: center;
+}
+.albums{
+    margin-left: 150px;
+    font-style: unset;
+    font-weight: 20px;
+    text-align: center;
+}
+.product1{
+    margin-left: 50px;
+    margin-top: 25px;
+    display: flex; 
+}
+.bt21{
+    margin-left:70px;
+    font-style: unset;
+    font-weight: 20px;
+    text-align: center;
+}
+.photocard{
+    margin-left: 150px;
+    font-style: unset;
+    font-weight: 20px;
+    text-align: center;
+}
+.dress{
+    margin-left: 150px;
+    font-style: unset;
+    font-weight: 20px;
+    text-align: center;
+}

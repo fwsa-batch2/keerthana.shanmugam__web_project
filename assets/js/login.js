@@ -1,5 +1,5 @@
 function myLogIn() {
-    event.preventDefault();
+    event.preventDefault()
      
     console.group("myLogIn")
     let pwd1 = document.getElementById("mail").value;

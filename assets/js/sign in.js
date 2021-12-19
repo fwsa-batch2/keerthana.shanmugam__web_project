@@ -11,8 +11,8 @@ function onPageLoad() {
 onPageLoad();
 
 function mySignIn() {
+event.preventDefault()
 
-    event.preventDefault();
     console.group("mySignIn")
     let name = document.getElementById("firstName").value;
     let password = document.getElementById("password").value;
@@ -57,8 +57,7 @@ function mySignIn() {
 function emailValidation(current_mail) {
     console.group("emailValidation")
     let thisMailExists = false;
-    // let userList = JSON.parse(localStorage.getItem("Fan_Details"));
-
+    
     for (i = 0; i < userList.length; i++) {
         const user = userList[i];
         const email = user.email;
@@ -84,7 +83,6 @@ function checkpassword() {
     }
     else {
         console.error();("password does not matched");
-        //  alert("password does not matched");
         console.groupEnd("checkpassword")
         return false;
     }
