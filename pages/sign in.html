@@ -3,7 +3,7 @@
 
 <head>
   <title>bts membership sign in</title>
-  <img src="./../assets/images/bts logo.jpg" align="right" width="90" height="90">
+  <link rel="stylesheet" href="./../assets/css/sign in.css">
 </head>
 
 <body>
@@ -17,7 +17,8 @@
     }
   </style>
   <h1> NEW MEMBERSHIP SIGN IN </h1>
-  <form onsubmit="mySignIn()">
+  <form onsubmit="mySignIn()" class="box">
+    <br><br>
     <table>
       <tr>
         <th>Name:</th>
@@ -50,7 +51,7 @@
       </tr>
       <tr>
         <th><br>Gender:</th>
-        <td><br><select class="gender" id="gender" name="">
+        <td><br><select class="gender" id="gender" name="gender">
             <option value="Select">Select</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
@@ -62,29 +63,8 @@
         <td><br><input type="text" name="country" id="countryName" pattern="[A-Za-z].{2,}"
             placeholder="Enter Your Country Name" required></td>
       </tr>
-      <tr>
-        <th>
-          <h3> ARMYS THOUGHTS ABOUT BTS:-</h3>
-        </th>
-      </tr>
-      <tr>
-        <th> Are you an army:</th>
-        <td><input type="radio" name="army" value="Yes">Yes <input type="radio" name="army" value="No">No </td>
-      </tr>
-      <tr>
-        <th><br>Do you attented any <br>BTS fansign ever:</th>
-        <td><br><input type="radio" name="fansign" value="Yes">Yes
-          <input type="radio" name="fansign" value="No">No
-        </td>
-      </tr>
-      <tr>
-        <th><br>Do you attented any BTS concert ever:</th>
-        <td><br><input type="radio" name="concert" value="Yes">Yes
-          <input type="radio" name="concert" value="No">No
-        </td>
-      </tr>
     </table>
-    <br> <input type="submit">
+    <br> <br><br><button class="button" type="submit">SUBMIT</button>
   </form>
   <script src="./../assets/js/sign in.js"></script>
 

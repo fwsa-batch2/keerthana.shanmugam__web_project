@@ -1,0 +1,30 @@
+.box {
+    margin-left: 20px;
+}
+
+.button {
+    margin-left: 200px;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+}
+
+.box input {
+    height: 35px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.box th {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.gender {
+    height: 30px;
+    width: 300px;
+    border-color: black;
+    border-style: inset;
+    border-radius: 5px;
+    background-color: white;
+}
