@@ -22,7 +22,7 @@ event.preventDefault()
     let country = document.getElementById("countryName").value;
 
     const armyDetails = {
-        "firstname": name,
+        "name": name,
         "password": password,
         "email": email,
         "dob": dob,

@@ -3,11 +3,10 @@ function submitHandler() {
 
     let email = document.getElementById("mail").value;
     let mailId = JSON.parse(localStorage.getItem("Fan_Details"));
-    let forget = mailId.length;
 
     let emailExists = false;
 
-    for (i = 0; i < forget; i++) {
+    for (i = 0; i < mailId.length; i++) {
         const mail = mailId[i];
         const current_mail = mail.email;
         if (email == current_mail) {

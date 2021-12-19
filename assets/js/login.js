@@ -5,11 +5,11 @@ function myLogIn() {
     let pwd1 = document.getElementById("mail").value;
     let pwd2 = document.getElementById("pass").value;
     let storeageInarray = JSON.parse(localStorage.getItem("Fan_Details"));
-    let login = storeageInarray.length;
+    // let login = storeageInarray.length;
 
     let loginId = false;
      
-    for (i = 0; i < login; i++) {
+    for (i = 0; i < storeageInarray.length; i++) {
         const userdetail = storeageInarray[i];
         const email = userdetail.email;
         const password = userdetail.password;
