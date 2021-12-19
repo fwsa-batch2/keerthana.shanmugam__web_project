@@ -5,7 +5,6 @@ function myLogIn() {
     let pwd1 = document.getElementById("mail").value;
     let pwd2 = document.getElementById("pass").value;
     let storeageInarray = JSON.parse(localStorage.getItem("Fan_Details"));
-    // let login = storeageInarray.length;
 
     let loginId = false;
      

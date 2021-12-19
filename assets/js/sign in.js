@@ -82,7 +82,7 @@ function checkpassword() {
         return true;
     }
     else {
-        console.error();("password does not matched");
+        console.error("password does not matched");
         console.groupEnd("checkpassword")
         return false;
     }
