@@ -9,7 +9,7 @@
 
 <body>
   <br><br>
-  <h1>LOGIN</h1>
+
   <style media="screen">
     body {
       align-items: center;
@@ -20,26 +20,32 @@
       background-position: center;
     }
   </style>
-  <form onsubmit="myLogIn()" class="table">
-    <br><br>
-    <table>
-      <tr>
-        <th id="email"></th>
-        <td> <input type="email" name="user_id" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-            placeholder="Enter Your email" required></td>
-      </tr>
-      <tr>
-        <th id="password"></th>
-        <td><br> <input type="password" name="password" id="pass" pattern="[A-Za-z0-9].{7,13}"
-            placeholder="Enter Your Password"
-            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-            minlength="7" maxlength="13" required></td>
-      </tr>
-    </table>
-    <br> <br><button class="button1" type="submit">LOGIN </button> <button class="button2" type="button" name="button"> <a
-        href="./../pages/sign in.html"> SIGN IN </a></button>
+  <form onsubmit="myLogIn(event)" class="table">
+    <figure>
+      <figcaption>
+        <h1>LOGIN</h1>
+      </figcaption>
+      <br><br>
+      <table>
+        <tr>
+          <th id="email"></th>
+          <td> <input type="email" name="user_id" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              placeholder="Enter Your email" required></td>
+        </tr>
+        <tr>
+          <th id="password"></th>
+          <td><br> <input type="password" name="password" id="pass" pattern="[A-Za-z0-9].{7,13}"
+              placeholder="Enter Your Password"
+              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+              minlength="7" maxlength="13" required></td>
+        </tr>
+      </table>
+    </figure>
+    <br> <br><button class="button1" type="submit">LOGIN </button> <button class="button2" type="button" name="button">
+      <a href="./../pages/sign in.html"> SIGN IN </a></button>
 
-    <br><br> <p><a href="./../pages/forget.html">forget password?</a></p>
+    <br><br>
+    <p><a href="./../pages/forget.html">forget password?</a></p>
   </form>
   <script src="./../assets/js/login.js"></script>
 </body>

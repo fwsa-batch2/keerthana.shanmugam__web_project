@@ -33,7 +33,7 @@ h1{
   height: 20px;
   width: 30%;
   padding: 10px;
-  margin-left: 765px;
+  margin-left: 730px;
   border-radius: 10px;
   background-color:white;
 
@@ -63,16 +63,16 @@ h1{
 }
 .hello input{
   height: 20px;
-  width: 20%;
+  width: 22%;
   padding: 10px;
   align-items:center;
-  margin-left: 800px;
+  margin-left: 750px;
   border-radius: 10px;
   background-color:white;
 }
 .forget{
   width: 150px;
   height: 50px;
-  margin-left: 845px;
+  margin-left: 840px;
   border-radius: 5px;
 }

@@ -1,4 +1,4 @@
-function myLogIn() {
+function myLogIn(event) {
     event.preventDefault()
      
     console.group("myLogIn")

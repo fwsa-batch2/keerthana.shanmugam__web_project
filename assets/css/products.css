@@ -8,7 +8,7 @@
     margin-top: 25px;
     display: flex;
 }
-.comback{
+.light{
     margin-left:70px;
     font-style: unset;
     font-weight: 20px;
@@ -32,18 +32,18 @@
     display: flex; 
 }
 .bt21{
-    margin-left:70px;
+    margin-left:100px;
     font-style: unset;
     font-weight: 20px;
     text-align: center;
 }
-.photocard{
+.btsProduct{
     margin-left: 150px;
     font-style: unset;
     font-weight: 20px;
     text-align: center;
 }
-.dress{
+.shows{
     margin-left: 150px;
     font-style: unset;
     font-weight: 20px;

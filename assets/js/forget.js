@@ -1,4 +1,4 @@
-function submitHandler() {
+function submitHandler(event) {
     event.preventDefault()
 
     let email = document.getElementById("mail").value;

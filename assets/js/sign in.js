@@ -10,7 +10,7 @@ function onPageLoad() {
 }
 onPageLoad();
 
-function mySignIn() {
+function mySignIn(event) {
 event.preventDefault()
 
     console.group("mySignIn")

@@ -18,15 +18,21 @@
       background-position: center;
     }
   </style>
-  <form onsubmit="submitHandler()">
-    <br><br><br><br>
-    <table>
-      <tr class="hello">
-        <th id="email"></th>
-        <td><input type="email" name="e-mail" id="mail" placeholder="Enter Your email_id"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></td>
-      </tr>
-    </table>
+  <form onsubmit="submitHandler(event)">
+    <br><br>
+    <figure>
+      <figcaption>
+        <h1>BTS WORLD</h1>
+      </figcaption>
+      <br><br>
+      <table>
+        <tr class="hello">
+          <th id="email"></th>
+          <td><input type="email" name="e-mail" id="mail" placeholder="Enter Your email_id"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></td>
+        </tr>
+      </table>
+    </figure>
     <br><br>
     <button class="forget" type="submit"> Submit </button>
 
