@@ -7,7 +7,6 @@ function myLogIn(event) {
     let storeageInarray = JSON.parse(localStorage.getItem("Fan_Details"));
 
     let loginId = false;
-    i = 1;
     for (j = 0; j < storeageInarray.length; j++) {
         const userdetail = storeageInarray[j];
         const email = userdetail.email;

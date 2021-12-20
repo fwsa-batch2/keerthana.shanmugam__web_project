@@ -5,7 +5,6 @@ function submitHandler(event) {
     let mailId = JSON.parse(localStorage.getItem("Fan_Details"));
 
     let emailExists = false;
-    i = 1;
     for (j = 0; j < mailId.length; j++) {
         const mail = mailId[j];
         const current_mail = mail.email;

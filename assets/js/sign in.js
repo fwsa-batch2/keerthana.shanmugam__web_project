@@ -57,7 +57,7 @@ event.preventDefault()
 function emailValidation(current_mail) {
     console.group("emailValidation")
     let thisMailExists = false;
-    i = 1;
+    
     for (j = 0; j < userList.length; j++) {
         const user = userList[j];
         const email = user.email;
