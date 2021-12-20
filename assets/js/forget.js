@@ -5,9 +5,10 @@ function submitHandler(event) {
     let mailId = JSON.parse(localStorage.getItem("Fan_Details"));
 
     let emailExists = false;
-
-    for (i = 0; i < mailId.length; i++) {
-        const mail = mailId[i];
+    
+    const i = 1
+    for (let j = 0; j < mailId.length; j++) {
+        const mail = mailId[j];
         const current_mail = mail.email;
         if (email == current_mail) {
             emailExists = true;
@@ -20,6 +21,7 @@ function submitHandler(event) {
         alert('Your User_mail and Password send to Your email_id successfully');
     }
     else {
+        console.error("you email not exist kindly sign in")
         alert("you email not exist kindly sign in")
     }
     return null;
