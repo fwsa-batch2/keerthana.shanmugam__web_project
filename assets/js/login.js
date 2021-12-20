@@ -8,7 +8,6 @@ function myLogIn(event) {
 
     let loginId = false;
     
-    const i = 1
     for (let j = 0; j < storeageInarray.length; j++) {
         const userdetail = storeageInarray[j];
         const email = userdetail.email;

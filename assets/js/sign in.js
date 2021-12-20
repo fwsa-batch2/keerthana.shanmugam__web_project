@@ -58,7 +58,6 @@ function emailValidation(current_mail) {
     console.group("emailValidation")
     let thisMailExists = false;
     
-    const i = 1
     for (let j = 0; j < userList.length; j++) {
         const user = userList[j];
         const email = user.email;

@@ -6,7 +6,6 @@ function submitHandler(event) {
 
     let emailExists = false;
     
-    const i = 1
     for (let j = 0; j < mailId.length; j++) {
         const mail = mailId[j];
         const current_mail = mail.email;
