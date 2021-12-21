@@ -1,8 +1,28 @@
-.official p{
-    font-size: 30px;
-    margin-left: 100px;
-  
-  }
+.sidenav{
+    float:left;
+    background-color:lavender;
+    padding: 20px; 
+    width:200px;
+    height: 1000px;
+    position: sticky;
+}
+.sidenav ul {
+    list-style: none;
+    display: block;
+    height: 20px;
+    width: 50px;
+}
+
+.sidenav a{
+    text-decoration: none;
+    color: purple;
+    padding: 50px;
+    font-weight: bold;
+}
+.right{
+    float:right;
+    margin-top: -900px;
+}
 .product{
     margin-left: 50px;
     margin-top: 25px;
@@ -45,6 +65,40 @@
 }
 .shows{
     margin-left: 150px;
+    font-style: unset;
+    font-weight: 20px;
+    text-align: center;
+}
+.merch{
+    margin-left: 10px;
+    margin-top: 25px;
+    display: flex;
+}
+.official{
+    font-size: 30px;
+    margin-left: 100px;
+  
+  }
+.weverse{
+    margin-left:100px;
+    font-style: unset;
+    font-weight: 20px;
+    text-align: center;
+}
+.vlive{
+    margin-left: 90px;
+    font-style: unset;
+    font-weight: 20px;
+    text-align: center;
+}
+.bt21logo{
+    margin-left: 90px;
+    font-style: unset;
+    font-weight: 20px;
+    text-align: center;
+}
+.shop{
+    margin-left: 90px;
     font-style: unset;
     font-weight: 20px;
     text-align: center;

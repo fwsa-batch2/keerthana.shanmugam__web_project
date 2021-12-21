@@ -58,8 +58,8 @@ function emailValidation(current_mail) {
     console.group("emailValidation")
     let thisMailExists = false;
     
-    for (j = 0; j < userList.length; j++) {
-        const user = userList[j];
+    for (i of userList) {
+        const user = i;
         const email = user.email;
         console.log(user)
         if (current_mail == email) {
