@@ -1,0 +1,23 @@
+.product{
+    margin-left: 50px;
+    margin-top: 25px;
+    display: flex;
+}
+.light{
+    margin-left:70px;
+    font-style: unset;
+    font-weight: 20px;
+    text-align: center;
+}
+.tickets{
+    margin-left: 150px;
+    font-style: unset;
+    font-weight: 20px;
+    text-align: center;
+}
+.albums{
+    margin-left: 150px;
+    font-style: unset;
+    font-weight: 20px;
+    text-align: center;
+}
