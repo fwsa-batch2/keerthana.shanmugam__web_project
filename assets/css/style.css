@@ -11,19 +11,15 @@ h1{
 .nav ul {
   list-style: none;
   display: flex;
-  text-align: right;
+  margin-top: 40px;
+  margin-left: 800px;
 }
-
 .nav a{
     text-decoration: none;
     color: purple;
     padding: 50px;
     font-weight: bold;
     text-align: right;
-}
-.login {
-  margin-left: 600px;
-  right: 10px;
 }
 .logo{
   margin-left: 100px;
@@ -41,7 +37,6 @@ h1{
   width: 150px;
   height: 50px;
   margin-left: 775px;
-  
 }
 .button2{
   width: 150px;

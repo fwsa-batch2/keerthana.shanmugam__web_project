@@ -15,7 +15,6 @@
 
 .sidenav a{
     text-decoration: none;
-    display: inline-block;
     color: black;
     padding: 50px;
     font-weight: bold;
@@ -41,7 +40,7 @@ h1{
     display: flex;
 }
 .light{
-    margin-left:50px;
+    margin-left:100px;
     padding: 10px;
     font-style: unset;
     font-weight: 20px;
