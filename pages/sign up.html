@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bts membership sign in</title>
+  <link rel="stylesheet" href="./../assets/css/sign up.css">
+</head>
+
+<body>
+  <style>
+    body {
+      background-image: url('./../assets/images/bts3.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment: fixed;
+      background-position: center;
+    }
+  </style>
+
+  <form onsubmit="mySignIn(event)" class="box">
+
+    <figure>
+      <figcaption>
+        <h1> NEW MEMBERSHIP SIGN UP </h1>
+      </figcaption>
+      <br><br>
+      <table>
+        <tr>
+          <th id="name">Name:</th>
+          <td><input type="text" name="name" id="firstName" pattern="[A-Za-z].{3,}" placeholder="Enter Your Name"
+              required></td>
+        </tr>
+        <tr>
+          <th id="password1"><br>Password:</th>
+          <td><br><input type="password" name="password" id="password" pattern="[A-Za-z0-9].{7,13}"
+              placeholder="Enter Password"
+              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+              minlength="7" maxlength="13" required></td>
+        </tr>
+        <tr>
+          <th id="confirmPassword1"><br>Confirm password:</th>
+          <td><br><input type="password" name="password" pattern="[a-zA-Z0-9].{7,13}" id="confirmPassword"
+              placeholder="Enter Password"
+              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+              minlength="7" maxlength="13" required></td>
+        </tr>
+        <tr>
+          <th id="emailId1"><br>e-mail:</th>
+          <td><br><input type="email" name="mail_id" id="emailId" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              placeholder="Enter Your e-mail" required></td>
+        </tr>
+        <tr>
+          <th id="dateOfBirth1"><br>DOB:</th>
+          <td><br><input type="date" name="dob" id="dateOfBirth" min="1970-01-01" max="2020-12-31"
+              placeholder="dd/mm/yyyy" required></td>
+        </tr>
+        <tr>
+          <th id="gender1"><br>Gender:</th>
+          <td><br><select class="gender" id="gender" name="gender">
+              <option value="Select">Select</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Transgender">Transgender</option>
+            </select></td>
+        </tr>
+        <tr>
+          <th id="countryName1"><br>Country:</th>
+          <td><br><input type="text" name="country" id="countryName" pattern="[A-Za-z].{2,}"
+              placeholder="Enter Your Country Name" required></td>
+        </tr>
+      </table>
+    </figure>
+    <br> <br><br><button class="button" type="submit">SUBMIT</button>
+  </form>
+  <script src="./../assets/js/sign up.js"></script>
+
+</body>
+
+</html>

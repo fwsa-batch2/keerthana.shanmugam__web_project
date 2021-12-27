@@ -21,9 +21,6 @@ h1{
     font-weight: bold;
     text-align: right;
 }
-.logo{
-  margin-left: 100px;
-}
 .table input{
   height: 20px;
   width: 30%;
@@ -53,7 +50,7 @@ h1{
   color: black;
 }
 .table p{
-  margin-left: 860px;
+  text-align: center;
 }
 .hello input{
   height: 20px;
