@@ -19,9 +19,9 @@ h1{
     color: purple;
     padding: 50px;
     font-weight: bold;
-    text-align: right;
+    text-align: right; 
 }
-.table input{
+.login input{
   height: 20px;
   width: 30%;
   padding: 10px;
@@ -41,15 +41,15 @@ h1{
   margin-left: 10px;
   
 }
-.table button:hover {
+.login button:hover {
   background-color: purple;
   color:white;
 }
-.table a{
+.login a{
   text-decoration: none;
   color: black;
 }
-.table p{
+.login p{
   text-align: center;
 }
 .hello input{

@@ -15,6 +15,7 @@
 
 .sidenav a{
     text-decoration: none;
+    display: inline-block;
     color: black;
     padding: 50px;
     font-weight: bold;

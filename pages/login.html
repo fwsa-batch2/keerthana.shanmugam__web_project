@@ -19,7 +19,7 @@
       background-position: center;
     }
   </style>
-  <form onsubmit="myLogIn(event)" class="table">
+  <form onsubmit="myLogIn(event)" class="login">
     <figure>
       <figcaption>
         <h1>LOGIN</h1>
@@ -29,7 +29,7 @@
         <tr>
           <th id="email"></th>
           <td> <input type="email" name="user_id" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-              placeholder="Enter Your email" required></td>
+              placeholder="Enter Your email" required autofocus></td>
         </tr>
         <tr>
           <th id="password"></th>

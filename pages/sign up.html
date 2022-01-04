@@ -30,22 +30,22 @@
       <table>
         <tr>
           <th id="name">Name:</th>
-          <td><input type="text" name="name" id="firstName" pattern="[A-Za-z].{3,}" placeholder="Enter Your Name"
-              required></td>
+          <td><input type="text" name="name" id="firstName" pattern="[A-Za-z].{3,32}" placeholder="Enter Your Name"
+              title="Name should contain atleast 3 to maximum 32 characters" required autofocus></td>
         </tr>
         <tr>
           <th id="password1"><br>Password:</th>
-          <td><br><input type="password" name="password" id="password" pattern="[A-Za-z0-9].{7,13}"
+          <td><br><input type="password" name="password" id="password" pattern="[A-Za-z0-9].{8,15}"
               placeholder="Enter Password"
               title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-              minlength="7" maxlength="13" required></td>
+              minlength="8" maxlength="15" required></td>
         </tr>
         <tr>
           <th id="confirmPassword1"><br>Confirm password:</th>
           <td><br><input type="password" name="password" pattern="[a-zA-Z0-9].{7,13}" id="confirmPassword"
               placeholder="Enter Password"
               title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-              minlength="7" maxlength="13" required></td>
+              minlength="8" maxlength="15" required></td>
         </tr>
         <tr>
           <th id="emailId1"><br>e-mail:</th>
@@ -54,7 +54,7 @@
         </tr>
         <tr>
           <th id="dateOfBirth1"><br>DOB:</th>
-          <td><br><input type="date" name="dob" id="dateOfBirth" min="1970-01-01" max="2020-12-31"
+          <td><br><input type="date" name="dob" id="dateOfBirth" min="1950-01-01" max="2021-12-31"
               placeholder="dd/mm/yyyy" required></td>
         </tr>
         <tr>
@@ -68,12 +68,12 @@
         </tr>
         <tr>
           <th id="countryName1"><br>Country:</th>
-          <td><br><input type="text" name="country" id="countryName" pattern="[A-Za-z].{2,}"
+          <td><br><input type="text" name="country" id="countryName" pattern="[A-Za-z].{2,20}"
               placeholder="Enter Your Country Name" required></td>
         </tr>
       </table>
     </figure>
-    <br> <br><br><button class="button" type="submit">SUBMIT</button>
+    <br> <br><br><button class="button" type="submit">SUBMIT</button><button class="button" type="reset">RESET</button>
   </form>
   <script src="./../assets/js/sign up.js"></script>
 
