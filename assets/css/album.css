@@ -30,6 +30,19 @@
 h1{
     text-align: center;
 }
+.albumInfo{
+    display: flex;
+    margin-left: 200px;
+   
+}
+.albumInfo p{
+    display: block;
+    margin-left: 100px;
+    
+   
+}
+
+
 .army {
     margin-left: 100px;
     font-family: sans-serif;
