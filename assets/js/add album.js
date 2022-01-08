@@ -1,27 +1,27 @@
 let newAlbum=[];
 
 function pageOnLoad() {
-    const  butteralbum = JSON.parse(localStorage.getItem("AlbumDetails"));
-    if ( butteralbum != null) {
-      newAlbum =  butteralbum;
+    const  btsAlbum = JSON.parse(localStorage.getItem("AlbumDetails"));
+    if ( btsAlbum != null) {
+      newAlbum = btsAlbum;
     }
   }
 function addSongs(event){
     event.preventDefault();
 
-    let nameOfTheSong = document.getElementById("songName").value;
-    let date = document.getElementById("releaseDate").value;
+    let nameOfTheAlbum = document.getElementById("albumName").value;
+    let price = document.getElementById("priceValue").value;
     let artist = document.getElementById("artistName").value;
     let imageLink = document.getElementById("imageLink").value
 
-    const butterAlbumDetails = {
-        "NameOfSong": nameOfTheSong,
-        "Price": date,
+    const btsAlbumDetails = {
+        "AlbumName": nameOfTheAlbum,
+        "Price": price,
         "ArtistName": artist,
-        "imageLink": imageLink,
+        "ImageLink": imageLink,
     };
 
-    newAlbum.push(butterAlbumDetails);
+    newAlbum.push(btsAlbumDetails);
     localStorage.setItem("AlbumDetails", JSON.stringify(newAlbum));
 
     window.location.href="./../pages/album list.html";

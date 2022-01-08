@@ -12,11 +12,9 @@
 ### Features :
    ##### 1. Membership Sign Up (completed)
    ##### 2. Login (completed)
-   ##### 3. Products (in process)
-   * Add Albums
-   * List Albums
-   ##### 4. New Releases (in process)
-   ##### 5. Calender (in process)
+   ##### 3. Add Albums (completed)
+   ##### 4. List Albums (completed)
+   ##### 5. Add BT21 Products (in progress)
 
 ### 1. Registration :
 
@@ -38,7 +36,7 @@
   * Date of Birth for registration for membership should be minimum from the year Jan 1950 to maximum Dec 2021.
   * Gender field for registration is requried.
   * Country field must contain minimum 2 characters with only alphabets and must not be empty.
-  * If everything is validated, redirect to login page.
+  * If everything is validated the details will store in localstorage and redirect to login page.
 
  ### 2. Login :
   ##### Fields
@@ -48,7 +46,27 @@
  * All input fields are required.
  * Email id and password should match with the local storage content.
  * If everything is validated, redirect to new releases page.
-
  
+ ### 3. Add Albums :
+  ##### Fields
+  * Album Name
+  * Price
+  * Artists Name
+  * Image Url
+  ##### Acceptance Criteria
+  * Add album button is in the list album page. 
+  * All input fields are required.
+  * Album name must contain atleast 2 characters and must not be empty.
+  * Price field accepts only numbers.
+  * Artist name must contain atleast 1 character and must not be empty.
+  * Only image url can accepts in this field. 
+  * If everything is validated the details will store in localstorage and redirect to album list page. 
+ 
+ ### 4. List Albums :
+  ##### Fields
+  * After clicking Product page click the albums image it will redirect to list album page.
+  * The details given in the Add Album Page is showed in the List Album Page.
+  * The details taken from the localstorage Add Album Page are shown in the Album List Page.
+  * Album Name, Price, Artist Name, Image of the Albums are listed in this page.
 
  

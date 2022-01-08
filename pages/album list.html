@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>list of songs in butter album</title>
+    <title>List Albums</title>
     <link rel="stylesheet" href="./../assets/css/album.css">
-    <style>
-body{
-    background-color:white;
-}
-
-img{
-     width: 300px;
-     height:  200px;   
-    }
-
-    </style>
+    
 </head>
+
 <body>
     <div class="sidenav">
-        <br><br><br><br>
+        <br>
+        <span class="add"><a href="./../pages/albumladd.html">Add Albums</a></span>
         <ul>
             <li><a href="./../pages/products.html"> CONCERT </a></li>
             <li><a href="./../pages/products.html"> UNOFFICIAL </a></li>
             <li><a href="./../pages/products.html">OFFICIAL</a></li>
         </ul>
     </div>
-    <div class="box" id="songsLists">
+    <div class="right" id="songsLists">
         <h1>Albums</h1>
-        <div class="albumInfo" id="albumInfo">
-        <img src="./../assets/images/army bomb ver1.jpg" alt="images">
-        <p> Album Name : <span class="place"> Hello </span></p><br><br>
-        <p> Price : <span class="price"> &#8377;;1455.90 </span></p><br><br>
-        <p> Artists Name:<span class="guide"> Pavan </span></p>
+        <div id="albumInfo">
+            <div class="imgInfo">
+                <img src="./../assets/images/butter album.png" alt="images" width=250px; height=200px;>
+            </div>
+            <div class="info">
+                <p><strong> Album Name : </strong><span class="place"> Butter </span></p>
+                <p><strong> Price : </strong><span class="price"> &#8377;1,455.90 </span></p>
+                <p><strong> Artists Name : </strong><span class="guide"> BTS </span></p><br>
+            </div>
+            <div class="buttonInfo">
+                <button type="button">Add To Cart</button>
+            </div>
         </div>
     </div>
     <script src="./../assets/js/list album.js"></script>
 </body>
+
 </html>
