@@ -63,7 +63,7 @@
   * If everything is validated the details will store in localstorage and redirect to album list page. 
  
  ### 4. List Albums :
-  ##### Fields
+  ##### Acceptance Criteria
   * After clicking Product page click the albums image it will redirect to list album page.
   * The details given in the Add Album Page is showed in the List Album Page.
   * The details taken from the localstorage Add Album Page are shown in the Album List Page.

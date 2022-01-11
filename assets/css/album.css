@@ -32,21 +32,25 @@
     border-radius: 7px;
 }
 .right{
-    margin-left: 180px;
-    display: grid;
+    margin-left: 130px;
 }
 .right h1{
     text-align: center;
 
 }
+#albumInfo{
+    display: flex;
+    flex-wrap: wrap;
+}
 .imgInfo {
-    display: block;
+    position: relative;
+    display: grid;
+    margin: 5px;
+    border: 2px dotted black;
+    padding: 10px;
 }
 .info {
     display: inline-block;
-    margin-left: 10px;
-}
-.buttonInfo{
-    float: right;
-    margin-right: 500px;
+    color: black;
+    position: relative;
 }
