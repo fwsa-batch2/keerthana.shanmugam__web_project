@@ -15,7 +15,8 @@
    ##### 3. Add Albums (completed)
    ##### 4. List Albums (completed)
    ##### 5. Add BT21 Products (completed)
-   ##### 6. List BT21 Products (completed) 
+   ##### 6. List BT21 Products (completed)
+   ##### 7. Cart (in progress) 
 
 ### 1. Registration :
 
@@ -54,7 +55,7 @@
   * Price
   * Artists Name
   * Image Url
-  ##### Acceptance Criteria
+   ##### Acceptance Criteria
   * Add album button is in the list album page. 
   * All input fields are required.
   * Album name must contain atleast 2 characters and must not be empty.
@@ -71,6 +72,23 @@
   * Album Name, Price, Artist Name, Image of the Albums are listed in this page.
 
   ### 5. Add BT21 Products :
-   ##### 
+   ##### Fields
+  * product Name
+  * Price
+  * Image Url
+   ##### Acceptance Criteria
+  * Add bt21 products button is in the list products page. 
+  * All input fields are required.
+  * Product name must contain atleast 2 characters and must not be empty.
+  * Price field accepts only numbers.
+  * Only image url can accepts in this field. 
+  * If everything is validated the details will store in localstorage and redirect to list bt21 products page.
+
+  ### 6. List BT21 Products :
+   ##### Acceptance Criteria
+  * After clicking Product page click the bt21 image it will redirect to list bt21 products page.
+  * The details given in the Add bt21 products Page is showed in the List bt21 products Page.
+  * The details taken from the localstorage Add bt21 products Page are shown in the List bt21 products Page.
+  * Product Name, Price, Image of the Products are listed in this page.
 
  
