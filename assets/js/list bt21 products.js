@@ -14,8 +14,8 @@ for (let i of bt21ProductDetails) {
                 <img src=\"${imageLink}\" alt="images" width=300px; height=250px;>
             
             <div class="info">
-                <p><strong> Product Name : </strong><span class="place"> ${productNames} </span></p>
-                <p><strong> Price : </strong><span class="price"> &#8377;${price} </span></p>
+                <p><strong> Product Name : </strong> ${productNames} </p>
+                <p><strong> Price : </strong> &#8377;${price} </p>
             </div>
             <div class="buttonInfo">
                 <button type="button">Add To Cart</button><br>

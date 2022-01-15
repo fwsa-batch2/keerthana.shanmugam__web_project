@@ -14,7 +14,8 @@
    ##### 2. Login (completed)
    ##### 3. Add Albums (completed)
    ##### 4. List Albums (completed)
-   ##### 5. Add BT21 Products (in progress)
+   ##### 5. Add BT21 Products (completed)
+   ##### 6. List BT21 Products (completed) 
 
 ### 1. Registration :
 
@@ -68,5 +69,8 @@
   * The details given in the Add Album Page is showed in the List Album Page.
   * The details taken from the localstorage Add Album Page are shown in the Album List Page.
   * Album Name, Price, Artist Name, Image of the Albums are listed in this page.
+
+  ### 5. Add BT21 Products :
+   ##### 
 
  

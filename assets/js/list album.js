@@ -14,9 +14,9 @@ for (let i of bt21ProductDetails) {
                 <img src=\"${imageLink}\" alt="images" width=250px; height=200px;>
 
                 <div class="info">
-                    <p><strong> Album Name : </strong><span class="place"> ${albumNames} </span></p>
-                    <p><strong> Price : </strong><span class="price"> &#8377;${price} </span></p>
-                    <p><strong> Artists Name : </strong><span class="guide"> ${artists} </span></p><br>
+                    <p><strong> Album Name : </strong> ${albumNames} </p>
+                    <p><strong> Price : </strong> &#8377;${price} </p>
+                    <p><strong> Artists Name : </strong> ${artists} </p><br>
                 </div>
                 <div class="buttonInfo">
                     <button type="button">Add To Cart</button>
