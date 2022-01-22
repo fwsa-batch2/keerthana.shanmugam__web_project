@@ -1,7 +1,7 @@
 let newAlbums = [];
 
 function pageOnLoad() {
-  const btsAlbum = JSON.parse(localStorage.getItem("AlbumDetails"));
+  const btsAlbum = JSON.parse(localStorage.getItem("ALBUM DETAILS"));
   if (btsAlbum != null) {
     newAlbums = btsAlbum;
   }
@@ -22,9 +22,9 @@ function addSongs(event) {
   };
 
   newAlbums.push(btsAlbumDetails);
-  localStorage.setItem("AlbumDetails", JSON.stringify(newAlbums));
+  localStorage.setItem("ALBUM DETAILS", JSON.stringify(newAlbums));
 
-  window.location.href = "./../pages/album list.html";
+  window.location.href = "./../pages/list album.html";
 
 }
 

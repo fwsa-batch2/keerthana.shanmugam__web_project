@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Albums</title>
+    <link rel="stylesheet" href="./../assets/css/add album.css">
+</head>
+
+<body>
+    <header>
+        <h1> ADD ALBUMS </h1>
+    </header>
+
+    <div class="container">
+        <form onsubmit="addSongs(event)">
+            <input type="text" name="album name" placeholder="Album Name" id="albumName" pattern="[A-Za-z].{2,}"
+                autofocus required><br>
+            <input type="number" name="price" placeholder="Price" id="priceValue" pattern="[0-9,].{2,7}"
+                title="This field accepts only Rupee value" required><br>
+            <input type="text" name="artist name" placeholder="Artist Name" id="artistName" pattern="[A-Za-z].{1,}"
+                required><br>
+            <input type="url" name="image url" placeholder="Image Url" id="imageLink"
+                title="This field accepts only Image Url" required><br>
+            <input type="reset" value="Reset" class="reset">
+            <input type="submit" value="Submit" class="submit">
+        </form>
+    </div>
+
+    <script src="./../assets/js/add album.js"></script>
+</body>
+
+</html>

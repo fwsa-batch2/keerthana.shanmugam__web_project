@@ -1,6 +1,6 @@
 .sidenav{
     float:left;
-    background-color:lavender;
+    background-color:rgb(186, 142, 228);
     margin-top: 0%;
     padding: 20px; 
     width:200px;
@@ -13,7 +13,6 @@
     height: 20px;
     width: 50px;
 }
-
 .sidenav a{
     text-decoration: none;
     display: inline-block;
@@ -22,31 +21,50 @@
     font-weight: bold;
 }
 .sidenav a:hover{
-    color: purple;
+    color: white
 }
-.add a{
-    margin-left: 17px;
-    width: 50px;
-    height: 23px;
-    background-color: blueviolet;
+body::-webkit-scrollbar{
+    display: none;
+}
+.add {
+    margin-left: 8px;
+    width: 45px;
+    height: 30px;
+    padding: 12px;
+    background-color: rgb(233, 220, 246);
     border-radius: 7px;
 }
-.right{
-    margin-left: 180px;
+.add a{
+    color: blueviolet;
 }
-.right h1{
+.add a:hover{
+    color: black;
+}
+.main{
+    margin-left: 200px;
+}
+.main h1{
     text-align: center;
+}
+.main .gif{
+    align-items: center;
+    justify-content: center;
+    margin-left: 420px;
 }
 #productInfo{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 60px;
+    margin-top: 30px;
 }
 .imgInfo {
     position: relative;
     display: grid;
     margin: 5px;
-    border: 2px dotted black;
-    padding: 10px;
+    border: 3px solid black;
+    padding: 5px;
+    width: 300px;
 }
 .info {
     display: inline-block;

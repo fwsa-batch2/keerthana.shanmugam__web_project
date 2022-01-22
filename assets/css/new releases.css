@@ -1,3 +1,6 @@
+body::-webkit-scrollbar{
+    display: none;
+}
 .song1{
     margin-left: 50px;
     margin-top: 25px;

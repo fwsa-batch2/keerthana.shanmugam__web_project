@@ -1,3 +1,6 @@
+body::-webkit-scrollbar{
+    display: none;
+  }
 .sidenav{
     float:left;
     background-color:lavender;
