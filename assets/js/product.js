@@ -1,19 +1,19 @@
 function searchbar(){
   let  searchItem = document.getElementById("search").value;
      if ("lightsticks" == searchItem){
-         window.open("/pages/bts lightsticks.html");
+         window.open("./bts lightsticks.html");
      }
      else if ("bt21" == searchItem){
-         window.open("/pages/list bt21 products.html")
+         window.open("./list bt21 products.html")
      }
      else if ("albums" == searchItem){
-         window.open("/pages/album list.html")
+         window.open("./album list.html")
      }
      else if ("weverse" == searchItem){
-         window.open("/pages/weverse.html")
+         window.open("./weverse.html")
      }
      else if ("vlive" == searchItem){
-         window.open("/pages/vlive.html")
+         window.open("./vlive.html")
      }
      else {
          alert("page not found");
