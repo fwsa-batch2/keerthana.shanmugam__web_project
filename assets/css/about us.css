@@ -12,7 +12,6 @@ body::-webkit-scrollbar{
     text-align: left;
     max-width: 80%;
     max-height: 40px;
-    margin-left: 30%;
     position: relative;
     border-bottom: 5px solid purple;
     font-size: 2em;
