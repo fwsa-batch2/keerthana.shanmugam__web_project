@@ -1,3 +1,10 @@
+body {
+    background-image: url('./../assets/images/bts3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+}
 .box {
     margin-left: 20px;
 }

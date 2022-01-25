@@ -4,20 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>BTS forget page</title>
-  <link rel="stylesheet" href="./../assets/css/style.css">
+  <link rel="stylesheet" href="./../assets/css/forget.css">
 </head>
 
-<body>
+<body style="background-image: url('./../assets/images/bts2.jpg');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-attachment: fixed;
+background-position: center;">
 
-  <style media="screen">
-    body {
-      background-image: url('./../assets/images/bts2.jpg');
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      background-attachment: fixed;
-      background-position: center;
-    }
-  </style>
   <form onsubmit="submitHandler(event)">
     <br><br>
     <figure>
@@ -26,7 +21,7 @@
       </figcaption>
       <br><br>
       <table>
-        <tr class="hello">
+        <tr class="forget-password">
           <th id="email"></th>
           <td><input type="email" name="e-mail" id="mail" placeholder="Enter Your email_id"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></td>
@@ -34,7 +29,7 @@
       </table>
     </figure>
     <br><br>
-    <button class="forget" type="submit"> Submit </button>
+    <button class="forget-submit" type="submit"> Submit </button>
 
   </form>
   <script src="./../assets/js/forget.js"></script>
