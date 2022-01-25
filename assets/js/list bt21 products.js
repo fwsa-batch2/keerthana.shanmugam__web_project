@@ -1,5 +1,5 @@
 let bt21Products = "";
-let bt21ProductDetails = JSON.parse(localStorage.getItem("BT21ProductDetails"));
+let bt21ProductDetails = JSON.parse(localStorage.getItem("BT21_PRODUCTS"));
 for (let i of bt21ProductDetails) {
     let productNames = i.ProductName;
     let price = i.Price;

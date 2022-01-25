@@ -2,7 +2,7 @@ let userList = [];
 
 function onPageLoad() {
     console.group("onPageLoad")
-    let users = JSON.parse(localStorage.getItem("Fan_Details"));
+    let users = JSON.parse(localStorage.getItem("FAN_DETAILS"));
     if (users != null) {
         userList = users;
         console.groupEnd("onPageLoad")
@@ -10,10 +10,10 @@ function onPageLoad() {
 }
 onPageLoad();
 
-function mySignIn(event) {
-event.preventDefault()
+function mySignUp(event) {
+    event.preventDefault()
 
-    console.group("mySignIn")
+    console.group("mySignup")
     let name = document.getElementById("firstName").value;
     let password = document.getElementById("password").value;
     let email = document.getElementById("emailId").value;
@@ -44,20 +44,20 @@ event.preventDefault()
     if (mismatch) {
         userList.push(armyDetails);
         let details = JSON.stringify(userList);
-        localStorage.setItem("Fan_Details", details);
+        localStorage.setItem("FAN_DETAILS", details);
         window.location.href = "login.html"
     }
     else {
         alert("password is not matched");
         console.error("password is not matched")
     }
-    console.groupEnd("mySignIn")
+    console.groupEnd("mySignup")
 }
 
 function emailValidation(current_mail) {
     console.group("emailValidation")
     let thisMailExists = false;
-    
+
     for (let i of userList) {
         const user = i;
         const email = user.email;
