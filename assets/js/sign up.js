@@ -2,7 +2,7 @@ let userList = [];
 
 function onPageLoad() {
     console.group("onPageLoad")
-    let users = JSON.parse(localStorage.getItem("FAN_DETAILS"));
+    const users = JSON.parse(localStorage.getItem("FAN_DETAILS"));
     if (users != null) {
         userList = users;
         console.groupEnd("onPageLoad")

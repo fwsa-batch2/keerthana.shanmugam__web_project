@@ -4,13 +4,13 @@ function myLogIn(event) {
     console.group("myLogIn")
     let pwd1 = document.getElementById("mail").value;
     let pwd2 = document.getElementById("pass").value;
-    let storeageInarray = JSON.parse(localStorage.getItem("FAN_DETAILS"));
+    const storeageInarray = JSON.parse(localStorage.getItem("FAN_DETAILS"));
 
     let loginId = false;
     for (let i of storeageInarray) {
-        const userdetail = i;
-        const email = userdetail.email;
-        const password = userdetail.password;
+        let userdetail = i;
+        let email = userdetail.email;
+        let password = userdetail.password;
         console.table(userdetail)
 
         if (pwd1 === email && pwd2 === password) {

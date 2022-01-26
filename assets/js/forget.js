@@ -2,7 +2,7 @@ function submitHandler(event) {
     event.preventDefault()
 
     let email = document.getElementById("mail").value;
-    let mailId = JSON.parse(localStorage.getItem("FAN_DETAILS"));
+    const mailId = JSON.parse(localStorage.getItem("FAN_DETAILS"));
 
     let emailExists = false;
     for (let i of mailId) {
