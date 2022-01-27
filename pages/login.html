@@ -1,45 +1,71 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>bts login page</title>
+    <link rel="stylesheet" href="./../assets/css/login.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>bts login page</title>
-  <link rel="stylesheet" href="./../assets/css/login.css">
-</head>
+  <body
+    style="
+      background-image: url('./../assets/images/bts4.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment: fixed;
+      background-position: center;
+    "
+  >
+    <form onsubmit="myLogIn(event)" class="login">
+      <figure>
+        <figcaption>
+          <h1>LOGIN</h1>
+        </figcaption>
+        <br /><br />
+        <table>
+          <tr>
+            <th id="email"></th>
+            <td>
+              <input
+                type="email"
+                name="user_id"
+                id="mail"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                placeholder="Enter Your email"
+                required
+                autofocus
+              />
+            </td>
+          </tr>
+          <tr>
+            <th id="password"></th>
+            <td>
+              <br />
+              <input
+                type="password"
+                name="password"
+                id="pass"
+                pattern="[A-Za-z0-9].{7,13}"
+                placeholder="Enter Your Password"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                minlength="7"
+                maxlength="13"
+                required
+              />
+            </td>
+          </tr>
+        </table>
+      </figure>
+      <br />
+      <br /><button class="login-button" type="submit" name="login">
+        LOGIN
+      </button>
+      <button class="signup-button" type="button" name="signup">
+        <a href="./../pages/sign up.html"> SIGN UP </a>
+      </button>
 
-<body style=" background-image: url('./../assets/images/bts4.jpg');
-background-repeat: no-repeat;
-background-size: 100% 100%;
-background-attachment: fixed;
-background-position: center;">
-  <form onsubmit="myLogIn(event)" class="login">
-    <figure>
-      <figcaption>
-        <h1>LOGIN</h1>
-      </figcaption>
-      <br><br>
-      <table>
-        <tr>
-          <th id="email"></th>
-          <td> <input type="email" name="user_id" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-              placeholder="Enter Your email" required autofocus></td>
-        </tr>
-        <tr>
-          <th id="password"></th>
-          <td><br> <input type="password" name="password" id="pass" pattern="[A-Za-z0-9].{7,13}"
-              placeholder="Enter Your Password"
-              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-              minlength="7" maxlength="13" required></td>
-        </tr>
-      </table>
-    </figure>
-    <br> <br><button class="login-button" type="submit" name="login">LOGIN </button> <button class="signup-button"
-      type="button" name="signup"><a href="./../pages/sign up.html"> SIGN UP </a></button>
-
-    <br><br>
-    <p><a href="./../pages/forget.html">forget password?</a></p>
-  </form>
-  <script src="./../assets/js/login.js"></script>
-</body>
-
+      <br /><br />
+      <p><a href="./../pages/forget.html">forget password?</a></p>
+    </form>
+    <script src="./../assets/js/login.js"></script>
+  </body>
 </html>

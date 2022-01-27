@@ -6,6 +6,8 @@ function pageOnLoad() {
         BT21Products = bt21Products;
     }
 }
+
+// it is an onsubmit function
 function addProducts(event) {
     event.preventDefault();
 

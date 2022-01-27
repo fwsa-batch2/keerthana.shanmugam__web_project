@@ -6,13 +6,15 @@ function pageOnLoad() {
     newAlbums = btsAlbum;
   }
 }
+
+// it is an onsubmit function
 function addSongs(event) {
   event.preventDefault();
 
   let nameOfTheAlbum = document.getElementById("albumName").value;
   let price = document.getElementById("priceValue").value;
   let artist = document.getElementById("artistName").value;
-  let imageLink = document.getElementById("imageLink").value
+  let imageLink = document.getElementById("imageLink").value;
 
   const btsAlbumDetails = {
     "AlbumName": nameOfTheAlbum,
