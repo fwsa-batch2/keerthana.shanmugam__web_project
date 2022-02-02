@@ -1,13 +1,13 @@
 # BTS FANPAGE
 
 ## Netlify Link :
-   ###### https://btsfanpageapp-ui-keerthanashanmugam.netlify.app/
+   ###### https://fwsa-batch2.github.io/keerthana.shanmugam__web_project/
 
 ## Sonarcloud Link :
-   ###### https://sonarcloud.io/project/overview?id=fwsa-batch-02_btsfanpageapp-ui 
+   ###### https://sonarcloud.io/project/overview?id=fwsa-batch2_keerthana.shanmugam__web_project
 
 ## Github Link :
-   ###### https://github.com/fwsa-batch-02/btsfanpageapp-ui      
+   ###### https://github.com/fwsa-batch2/keerthana.shanmugam__web_project     
 
 ### Features :
    ##### 1. Membership Sign Up (completed)

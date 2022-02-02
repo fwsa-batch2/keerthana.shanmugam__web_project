@@ -1,20 +1,20 @@
 let newAlbums = [];
 
 function pageOnLoad() {
-  const btsAlbum = JSON.parse(localStorage.getItem("ALBUM DETAILS"));
+  const btsAlbum = JSON.parse(localStorage.getItem("ALBUM_DETAILS"));
   if (btsAlbum != null) {
     newAlbums = btsAlbum;
   }
 }
 
 // it is an onsubmit function
-function addSongs(event) {
+function addSong(event) {
   event.preventDefault();
 
-  let nameOfTheAlbum = document.getElementById("albumName").value;
-  let price = document.getElementById("priceValue").value;
-  let artist = document.getElementById("artistName").value;
-  let imageLink = document.getElementById("imageLink").value;
+  const nameOfTheAlbum = document.getElementById("albumName").value;
+  const price = document.getElementById("priceValue").value;
+  const artist = document.getElementById("artistName").value;
+  const imageLink = document.getElementById("imageLink").value;
 
   const btsAlbumDetails = {
     "AlbumName": nameOfTheAlbum,
@@ -24,9 +24,9 @@ function addSongs(event) {
   };
 
   newAlbums.push(btsAlbumDetails);
-  localStorage.setItem("ALBUM DETAILS", JSON.stringify(newAlbums));
+  localStorage.setItem("ALBUM_DETAILS", JSON.stringify(newAlbums));
 
-  window.location.href = "./../pages/list album.html";
+    window.location.href = "./../pages/list album.html";
 
 }
 
