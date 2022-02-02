@@ -1,13 +1,13 @@
 function searchbar(){
   let  searchItem = document.getElementById("search").value;
      if ("lightsticks" == searchItem){
-         window.open("./bts lightsticks.html");
+         window.open("./bts_lightsticks.html");
      }
      else if ("bt21" == searchItem){
-         window.open("./list bt21 products.html")
+         window.open("./list_bt21_products.html")
      }
      else if ("albums" == searchItem){
-         window.open("./album list.html")
+         window.open("./album_list.html")
      }
      else if ("weverse" == searchItem){
          window.open("./weverse.html")

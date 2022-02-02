@@ -24,7 +24,7 @@ function addProducts(event) {
     BT21Products.push(bt21Details);
     localStorage.setItem("BT21_PRODUCTS", JSON.stringify(BT21Products));
 
-    window.location.href = "./../pages/list bt21 products.html";
+    window.location.href = "./../pages/list_bt21_products.html";
 
 }
 

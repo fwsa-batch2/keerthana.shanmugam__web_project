@@ -20,7 +20,7 @@ function myLogIn(event) {
     }
     if (loginId) {
         localStorage.setItem("USER_LOGIN", pwd1)
-        window.location.href = "new releases.html"
+        window.location.href = "newreleases.html"
     }
     else {
         console.error('password or email not-matched')

@@ -26,7 +26,7 @@ function addSong(event) {
   newAlbums.push(btsAlbumDetails);
   localStorage.setItem("ALBUM_DETAILS", JSON.stringify(newAlbums));
 
-    window.location.href = "./../pages/list album.html";
+    window.location.href = "./../pages/list_album.html";
 
 }
 
