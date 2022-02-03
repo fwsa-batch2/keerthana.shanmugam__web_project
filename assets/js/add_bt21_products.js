@@ -11,6 +11,7 @@ function pageOnLoad() {
 function addProducts(event) {
     event.preventDefault();
 
+    //calling id from input fields from the form
     const nameOfTheProducts = document.getElementById("productName").value;
     const price = document.getElementById("priceValue").value;
     const imageLink = document.getElementById("imageLink").value

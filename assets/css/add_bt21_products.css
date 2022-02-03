@@ -10,7 +10,7 @@ h1 {
 .container {
     background-color: rgb(233, 220, 246);
     width: 420px;
-    height: 420px;
+    height: 400px;
     margin-left: 680px;
     margin-top: 60px;
     padding-left: 50px;
@@ -33,7 +33,7 @@ input {
     width: 150px;
     height: 50px;
     font-size: 20px;
-    margin-top: 40px;
+    margin-top: 60px;
     border-radius: 7px;
     margin-left: 8px;
     background-color: rgb(186, 142, 228);
@@ -50,7 +50,7 @@ input {
     width: 150px;
     height: 50px;
     font-size: 20px;
-    margin-top: 40px;
+    margin-top: 60px;
     border-radius: 7px;
     margin-left: 40px;
     background-color: rgb(186, 142, 228);

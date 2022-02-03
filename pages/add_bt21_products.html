@@ -14,34 +14,42 @@
     </header>
     <div class="container">
       <form onsubmit="addProducts(event)" class="addbt21">
-        <input
-          type="text"
-          name="product name"
-          placeholder="Product Name"
-          id="productName"
-          pattern="[A-Za-z].{2,}"
-          autofocus
-          required
-        /><br /><br />
-        <input
-          type="number"
-          name="price"
-          placeholder="Price"
-          id="priceValue"
-          pattern="[0-9,].{2,7}"
-          title="This field accepts only Rupee value"
-          required
-        /><br /><br />
-        <input
-          type="url"
-          name="image url"
-          placeholder="Image Url"
-          id="imageLink"
-          title="This field accepts only Image Url"
-          required
-        /><br /><br />
-        <input type="reset" value="Reset" class="reset" />
-        <input type="submit" value="Submit" class="submit" />
+        <div>
+          <input
+            type="text"
+            name="product name"
+            placeholder="Product Name"
+            id="productName"
+            pattern="[A-Za-z].{2,}"
+            autofocus
+            required
+          /><br />
+        </div>
+        <div>
+          <input
+            type="number"
+            name="price"
+            placeholder="Price"
+            id="priceValue"
+            pattern="[0-9,].{2,7}"
+            title="This field accepts only Rupee value"
+            required
+          /><br />
+        </div>
+        <div>
+          <input
+            type="url"
+            name="image url"
+            placeholder="Image Url"
+            id="imageLink"
+            title="This field accepts only Image Url"
+            required
+          /><br />
+        </div>
+        <div>
+          <input type="reset" value="Reset" class="reset" />
+          <input type="submit" value="Submit" class="submit" />
+        </div>
       </form>
     </div>
 

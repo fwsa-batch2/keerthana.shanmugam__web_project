@@ -10,7 +10,8 @@ function pageOnLoad() {
 // it is an onsubmit function
 function addSong(event) {
   event.preventDefault();
-
+  
+  //calling id from input fields from the form
   const nameOfTheAlbum = document.getElementById("albumName").value;
   const price = document.getElementById("priceValue").value;
   const artist = document.getElementById("artistName").value;
@@ -26,8 +27,9 @@ function addSong(event) {
   albums.push(btsAlbumDetails);
   localStorage.setItem("ALBUM_DETAILS", JSON.stringify(albums));
    
-  //after submit page redirect to list_album.html
-    window.location.href = "./../pages/list_album.html";
+  //after submit redirect to list_album.html page
+
+  window.location.href = "./../pages/list_album.html";
 
 }
 
