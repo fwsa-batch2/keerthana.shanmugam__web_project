@@ -1,9 +1,9 @@
-let BT21Products = [];
+let products = [];
 
 function pageOnLoad() {
     const bt21Products = JSON.parse(localStorage.getItem("BT21_PRODUCTS"));
     if (bt21Products != null) {
-        BT21Products = bt21Products;
+        products = bt21Products;
     }
 }
 
@@ -11,19 +11,20 @@ function pageOnLoad() {
 function addProducts(event) {
     event.preventDefault();
 
-    let nameOfTheProducts = document.getElementById("productName").value;
-    let price = document.getElementById("priceValue").value;
-    let imageLink = document.getElementById("imageLink").value
+    const nameOfTheProducts = document.getElementById("productName").value;
+    const price = document.getElementById("priceValue").value;
+    const imageLink = document.getElementById("imageLink").value
 
     const bt21Details = {
-        "ProductName": nameOfTheProducts,
-        "Price": price,
-        "ImageLink": imageLink,
+        "product": nameOfTheProducts,
+        "price": price,
+        "imageUrl": imageLink,
     };
 
-    BT21Products.push(bt21Details);
-    localStorage.setItem("BT21_PRODUCTS", JSON.stringify(BT21Products));
-
+    products.push(bt21Details);
+    localStorage.setItem("BT21_PRODUCTS", JSON.stringify(products));
+    
+    //after submit page redirect to list_bt21_products.html
     window.location.href = "./../pages/list_bt21_products.html";
 
 }

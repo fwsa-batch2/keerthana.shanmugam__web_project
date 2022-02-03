@@ -1,21 +1,21 @@
-let bt21Products = "";
-const bt21ProductDetails = JSON.parse(localStorage.getItem("ALBUM_DETAILS"));
-for (let i of bt21ProductDetails) {
-    let albumNames = i.AlbumName;
-    let price = i.Price;
-    let artists = i.ArtistName;
-    let imageLink = i.ImageLink;
+let albums = "";
+const DetailsOfAlbum = JSON.parse(localStorage.getItem("ALBUM_DETAILS"));
+for (let i of DetailsOfAlbum) {
+    const albumName = i.album;
+    const priceOfTheAlbum = i.price;
+    const artistName = i.artist;
+    const imageLink = i.imageUrl;
     console.log(imageLink)
-    bt21Products +=
+    albums +=
 
         `<div id="albumInfo">
             <div class="imgInfo">
                 <img src=\"${imageLink}\" alt="images" width=250px; height=200px;>
 
                 <div class="info">
-                    <p><strong> Album Name : </strong> ${albumNames} </p>
-                    <p><strong> Price : </strong> &#8377;${price} </p>
-                    <p><strong> Artists Name : </strong> ${artists} </p>
+                    <p><strong> Album Name : </strong> ${albumName} </p>
+                    <p><strong> Price : </strong> &#8377;${priceOfTheAlbum} </p>
+                    <p><strong> Artists Name : </strong> ${artistName} </p>
                 </div>
                 <div class="buttonInfo">
                     <button type="button">Add To Cart</button><br>
@@ -26,4 +26,4 @@ for (let i of bt21ProductDetails) {
 }
 
 let div = document.getElementById("albumInfo");
-div.innerHTML = bt21Products;
+div.innerHTML = albums;

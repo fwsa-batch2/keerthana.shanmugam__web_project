@@ -1,9 +1,9 @@
-let newAlbums = [];
+let albums = [];
 
 function pageOnLoad() {
   const btsAlbum = JSON.parse(localStorage.getItem("ALBUM_DETAILS"));
   if (btsAlbum != null) {
-    newAlbums = btsAlbum;
+    albums = btsAlbum;
   }
 }
 
@@ -17,15 +17,16 @@ function addSong(event) {
   const imageLink = document.getElementById("imageLink").value;
 
   const btsAlbumDetails = {
-    "AlbumName": nameOfTheAlbum,
-    "Price": price,
-    "ArtistName": artist,
-    "ImageLink": imageLink,
+    "album": nameOfTheAlbum,
+    "price": price,
+    "artist": artist,
+    "imageUrl": imageLink,
   };
 
-  newAlbums.push(btsAlbumDetails);
-  localStorage.setItem("ALBUM_DETAILS", JSON.stringify(newAlbums));
-
+  albums.push(btsAlbumDetails);
+  localStorage.setItem("ALBUM_DETAILS", JSON.stringify(albums));
+   
+  //after submit page redirect to list_album.html
     window.location.href = "./../pages/list_album.html";
 
 }

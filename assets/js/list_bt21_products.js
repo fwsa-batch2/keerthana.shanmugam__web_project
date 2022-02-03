@@ -1,19 +1,19 @@
-let bt21Products = "";
+let bt21Products = ""
 const bt21ProductDetails = JSON.parse(localStorage.getItem("BT21_PRODUCTS"));
 for (let i of bt21ProductDetails) {
-    let productNames = i.ProductName;
-    let price = i.Price;
-    let imageLink = i.ImageLink;
+    const productName = i.product;
+    const priceOfTheProduct = i.price;
+    const imageLink = i.imageUrl;
     console.log(imageLink)
-    bt21Products +=
+     bt21Products +=
 
         `<div id="productInfo">
             <div class="imgInfo">
                 <img src=\"${imageLink}\" alt="images" width=300px; height=250px;>
             
             <div class="info">
-                <p><strong> Product Name:</strong> ${productNames} </p>
-                <p><strong> Price:</strong> &#8377;${price} </p>
+                <p><strong> Product Name:</strong> ${productName} </p>
+                <p><strong> Price:</strong> &#8377;${priceOfTheProduct} </p>
             </div>
             <div class="buttonInfo">
                 <button type="button">Add To Cart</button><br>
