@@ -57,7 +57,7 @@ h1{
     color: purple;
     text-align: center;
   }
-.right{
+.container{
     position: absolute;
     margin-top: -10px;
     margin-left: 200px;
@@ -73,36 +73,13 @@ h1{
     font-weight: 20px;
     text-align: center;
 }
-.tickets{
-    margin-left: 150px;
-    font-style: unset;
-    font-weight: 20px;
-    text-align: center;
-}
-.albums{
-    margin-left: 150px;
-    font-style: unset;
-    font-weight: 20px;
-    text-align: center;
-}
-.product1{
-    margin-left: 50px;
-    margin-top: 25px;
-    display: flex; 
-}
-.bt21{
+.bt21Products{
     margin-left:100px;
     font-style: unset;
     font-weight: 20px;
     text-align: center;
 }
 .btsProduct{
-    margin-left: 150px;
-    font-style: unset;
-    font-weight: 20px;
-    text-align: center;
-}
-.shows{
     margin-left: 150px;
     font-style: unset;
     font-weight: 20px;
@@ -124,19 +101,7 @@ h1{
     font-weight: 20px;
     text-align: center;
 }
-.vlive{
-    margin-left: 90px;
-    font-style: unset;
-    font-weight: 20px;
-    text-align: center;
-}
-.bt21logo{
-    margin-left: 90px;
-    font-style: unset;
-    font-weight: 20px;
-    text-align: center;
-}
-.shop{
+.shops{
     margin-left: 90px;
     font-style: unset;
     font-weight: 20px;

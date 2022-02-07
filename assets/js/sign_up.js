@@ -13,13 +13,14 @@ onPageLoad();
 function mySignUp(event) {
     event.preventDefault()
 
+    //calling id from input fields from the form
     console.group("mySignup")
-    let name = document.getElementById("firstName").value;
-    let password = document.getElementById("password").value;
-    let email = document.getElementById("emailId").value;
-    let dob = document.getElementById("dateOfBirth").value;
-    let gender = document.getElementById("gender").value;
-    let country = document.getElementById("countryName").value;
+    const name = document.getElementById("firstName").value;
+    const password = document.getElementById("password").value;
+    const email = document.getElementById("emailId").value;
+    const dob = document.getElementById("dateOfBirth").value;
+    const gender = document.getElementById("gender").value;
+    const country = document.getElementById("countryName").value;
 
     const armyDetails = {
         "name": name,
@@ -54,6 +55,7 @@ function mySignUp(event) {
     console.groupEnd("mySignup")
 }
 
+//check the email already exist
 function emailValidation(current_mail) {
     console.group("emailValidation")
     let thisMailExists = false;
@@ -71,6 +73,7 @@ function emailValidation(current_mail) {
     return thisMailExists;
 }
 
+//checking the password and confirm password are same
 function checkpassword() {
     console.group("checkpassword")
     let pass1 = document.getElementById("password").value;

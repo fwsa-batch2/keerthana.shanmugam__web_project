@@ -2,8 +2,8 @@ function myLogIn(event) {
     event.preventDefault()
 
     console.group("myLogIn")
-    let pwd1 = document.getElementById("mail").value;
-    let pwd2 = document.getElementById("pass").value;
+    const emailOfTHeUsers = document.getElementById("mail").value;
+    const PasswordOfTheUsers = document.getElementById("pass").value;
     const storeageInarray = JSON.parse(localStorage.getItem("FAN_DETAILS"));
 
     let loginId = false;
@@ -13,13 +13,13 @@ function myLogIn(event) {
         let password = userdetail.password;
         console.table(userdetail)
 
-        if (pwd1 === email && pwd2 === password) {
+        if (emailOfTHeUsers === email && PasswordOfTheUsers === password) {
             loginId = true;
             break;
         }
     }
     if (loginId) {
-        localStorage.setItem("USER_LOGIN", pwd1)
+        localStorage.setItem("USER_LOGIN", emailOfTHeUsers)
         window.location.href = "newreleases.html"
     }
     else {
