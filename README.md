@@ -16,7 +16,8 @@
    ##### 4. List Albums (completed)
    ##### 5. Add BT21 Products (completed)
    ##### 6. List BT21 Products (completed)
-   ##### 7. Cart (in progress) 
+   ##### 7. Search Bar (completed) 
+   ##### 8. Add to Cart (yet to start)
 
 ### 1. Registration :
 
@@ -90,5 +91,14 @@
   * The details given in the Add bt21 products Page is showed in the List bt21 products Page.
   * The details taken from the localstorage Add bt21 products Page are shown in the List bt21 products Page.
   * Product Name, Price, Image of the Products are listed in this page.
+
+  ### 7. Search Bar :
+   ##### Key words in search bar
+   * "lightsticks"
+   * "bt21"
+   * "albums"
+   * "weverse"
+   * "vlive"
+   This are some key words to search in search bar, were it redirects it to their respective pages. Search bar is in the products page.
 
  

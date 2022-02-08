@@ -6,6 +6,7 @@ function pageOnLoad() {
         products = bt21Products;
     }
 }
+pageOnLoad()
 
 // it is an onsubmit function
 function addProducts(event) {
@@ -22,6 +23,13 @@ function addProducts(event) {
         "imageUrl": imageLink,
     };
 
+    let thisImageUrlAlreadyExists = imageUrlValidation(imageLink);
+
+    if(thisImageUrlAlreadyExists){
+        alert("This Image Url already exists");
+        return;
+    }
+
     products.push(bt21Details);
     localStorage.setItem("BT21_PRODUCTS", JSON.stringify(products));
     
@@ -30,4 +38,18 @@ function addProducts(event) {
 
 }
 
-pageOnLoad()
+function imageUrlValidation(url) {
+console.group("imageUrlValidation")
+  let imageUrlExists = false;
+  
+    for (let i of products) {
+      const image = i.imageUrl;
+  
+      if (url == image) {
+        imageUrlExists = true;
+        break;
+      }
+    }
+    console.groupEnd("imageUrlValidation")
+    return imageUrlExists;
+  }

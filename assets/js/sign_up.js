@@ -63,7 +63,7 @@ function emailValidation(current_mail) {
     for (let i of userList) {
         const user = i;
         const email = user.email;
-        console.log(user)
+
         if (current_mail == email) {
             thisMailExists = true;
             break;
