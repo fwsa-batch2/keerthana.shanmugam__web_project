@@ -38,6 +38,7 @@ function addProducts(event) {
 
 }
 
+//checking the imageUrl is already exists
 function imageUrlValidation(url) {
 console.group("imageUrlValidation")
   let imageUrlExists = false;

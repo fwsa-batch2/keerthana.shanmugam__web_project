@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bts membership sign in</title>
+    <title>membership sign up</title>
     <link rel="stylesheet" href="./../assets/css/sign_up.css" />
   </head>
 
@@ -101,7 +101,7 @@
           <tr>
             <th id="gender1"><br />Gender:</th>
             <td>
-              <br /><select class="gender" id="gender" name="gender">
+              <br /><select class="select_box" id="gender" name="gender">
                 <option value="Select">Select</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
@@ -112,14 +112,23 @@
           <tr>
             <th id="countryName1"><br />Country:</th>
             <td>
-              <br /><input
-                type="text"
-                name="country"
-                id="countryName"
-                pattern="[A-Za-z].{2,20}"
-                placeholder="Enter Your Country Name"
-                required
-              />
+              <br />
+              <select class="select_box" id="countryName" name="country">
+                <option value="Select">Select</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Brasil">Brasil</option>
+                <option value="India">India</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Japan">Japan</option>
+                <option value="China">China</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Russia">Russia</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Canada">Canada</option>
+              </select>
             </td>
           </tr>
         </table>

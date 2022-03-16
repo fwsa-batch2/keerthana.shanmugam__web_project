@@ -10,7 +10,7 @@ for (let i of DetailsOfAlbum) {
 
         `<div id="albumInfo">
             <div class="imgInfo">
-                <img src=\"${imageLink}\" alt="images" width=250px; height=200px;>
+                <img src="${imageLink}" alt="images" width=250px; height=200px;>
 
                 <div class="info">
                     <p><strong> Album Name : </strong> ${albumName} </p>
